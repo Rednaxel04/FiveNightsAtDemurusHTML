@@ -21,14 +21,18 @@
     Il tuo browser non supporta il video.
   </video>
 </div>
-<a href="https://raw.githubusercontent.com/Rednaxel04/FiveNightsAtDemurusHTML/main/Build.rar" download class="download-button">
+<a href="https://raw.githubusercontent.com/Rednaxel04/FiveNightsAtDemurusHTML/main/Build.rar" download id="download-game-button" download class="download-button">
    Da Inizio alla Notte
 </a>
+
+<audio id="hover-sound" src="Marco.mp3" preload="auto"></audio>
+
+
   </section>
 
   <section class="description">
     <h2>Una suspence continua</h2>
-    <p><b>G.P.</b> (<u>disoccupato dalla tenera età di 0 anni</u>) ha finalmente deciso di trovare un impiego come babysitter <br>
+    <p><b>GP</b> (<u>disoccupato dalla tenera età di 0 anni</u>) ha finalmente deciso di trovare un impiego come babysitter <br>
       per raccimolare qualche soldo prima di passare da <del>sisal</del> i senzatetto a donarne un po'.<br>
       non sa però che sta per imbarcarsi in un esperienza che lo cambierà <b>per sempre</b>,<br>
       riuscirà a sfuggire dalla grinfie della <em>lugubre notte santagiustese</em>?</p>
@@ -42,6 +46,12 @@
       <li>NON LASCIATE CHE LUI VI PRENDA</li>
     </ul>
   </section>
+
+<a href="ArtbookDemurus.pdf" download id="download-artbook-button" download class="download-artbook">
+   Scarica l’Artbook – £19.00
+</a>
+
+<audio id="artbook-hover-sound" src="Ohboy.mp3" preload="auto"></audio>
 
   <section class="screenshots">
     <h2>NON SIETE SOLI</h2>
@@ -62,5 +72,21 @@
   <footer>
     <p>&copy; 2025 HARD TO SOFTWARE S.p.A - Tutti i diritti riservati</p>
   </footer>
+  <script>
+  const button = document.getElementById('download-game-button');
+  const sound = document.getElementById('hover-sound');
+
+  button.addEventListener('mouseenter', () => {
+    sound.currentTime = 0; // riavvia il suono
+    sound.play();
+  });
+  const artbookButton = document.getElementById('download-artbook-button');
+const artbookSound = document.getElementById('artbook-hover-sound');
+
+artbookButton.addEventListener('mouseenter', () => {
+  artbookSound.currentTime = 0;
+  artbookSound.play();
+});
+</script>
 </body>
 </html>

@@ -123,3 +123,27 @@ footer {
   background-color: #a00000;
   border-color: #ff0000;
 }
+
+.download-artbook {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #2e1f1f;
+  color: #f5e6dc;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border: 1px solid #a1887f;
+  border-radius: 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #1a0d0d;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-artbook:hover {
+  background-color: #4b2e2e;
+  color: #ffffff;
+  border-color: #ffe0b2;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #5e1d1d;
+}
